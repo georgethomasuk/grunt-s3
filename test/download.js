@@ -25,7 +25,7 @@ module.exports = {
   testDownload : function (test) {
     test.expect(1);
 
-    var dest = __dirname + '/files/a.txt';
+    var dest = __dirname + '/files/subdir/anotherSubDir/furtherSubDir/evenMoreSubDir/oneMoreSubDir/a.txt';
     var src = __dirname + '/../s3/127/test/a.txt/.fakes3_metadataFFF/content';
 
     s3.download('a.txt', dest, config)
